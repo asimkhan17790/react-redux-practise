@@ -1,13 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Profile from './components/Profile';
 import NotFound from './components/NotFound';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 function App() {
   return (
       <main>

@@ -1,21 +1,27 @@
-import React from 'react';
-import logo from '../../logo.svg';
-import '../../App.css';
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import { Container, Col, Row } from 'react-bootstrap';
+import MyButton from './MyButton';
+import Display from './Display';
 export default function Home() {
-    return ( <div className="App">
-                  <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <p>
-                      Edit <code>src/App.js</code> and save to reload.
-                    </p>
-                    <a
-                      className="App-link"
-                      href="https://reactjs.org"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Welcome Asim!! Learn React.
-                    </a>
-                  </header>
-    </div>);
+    const [counter, setCounter] = useState(0);
+    const incrementCounter = (incrementValue) => setCounter(counter + incrementValue);
+    return (
+    <Container fluid>
+      <Row>
+          <Col>
+                <MyButton increment = {1} onClickFunction = {incrementCounter}/>
+                <MyButton increment = {5} onClickFunction = {incrementCounter}/>
+                <MyButton increment = {10} onClickFunction = {incrementCounter}/>
+                <MyButton increment = {50} onClickFunction = {incrementCounter}/>
+                <MyButton increment = {100} onClickFunction = {incrementCounter}/>
+          </Col>
+          <Col>
+                <Display message={counter}/>
+          </Col>
+      </Row>
+    </Container>
+    );
 }
+
+
