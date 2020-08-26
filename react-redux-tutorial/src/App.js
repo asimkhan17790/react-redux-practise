@@ -13,7 +13,7 @@ function App() {
                 <Route path="/home" component={Home} exact />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/profile" component={Profile} />
+                <Route path="/profile" render={()=> <Profile title='Github Cards App!!'/>} />
                 <Route component={NotFound} />
       </Switch>
     </main>

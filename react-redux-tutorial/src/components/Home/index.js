@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import { Container, Col, Row } from 'react-bootstrap';
 import MyButton from './MyButton';
 import Display from './Display';
