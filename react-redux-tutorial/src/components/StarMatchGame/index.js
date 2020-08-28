@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../logo.svg';
 import '../../App.css';
-export default function About() {
+export default function StarMatchGame() {
       return (
         <div className="App">
           <header className="App-header">
@@ -15,7 +15,7 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              About Page
+              Star Match Game
             </a>
           </header>
         </div>
